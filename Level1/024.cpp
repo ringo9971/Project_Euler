@@ -54,6 +54,7 @@ signed main() {
   };
 
   int num = 0;
+  N--;
   vector<bool> used(10, false);
   RREP(i, 10){
     int cnt = 0;
