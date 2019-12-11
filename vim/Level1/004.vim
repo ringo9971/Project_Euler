@@ -18,22 +18,14 @@ function! s:is_same(num) abort
   return 1
 endfunction
 
-function! s:max(a, b) abort
-  if a:a > a:b
-    return a:a
-  endif
-  return a:b
-endfunction
-
-
 let ans = 0
 for i in range(100, 999)
   for j in range(100, 999)
-    if i*j < ans
+    if i*j <= ans
       continue
     endif
     if s:is_same(i*j)
-      let ans = s:max(ans, i*j)
+      let ans = i*j
     endif
   endfor
 endfor
