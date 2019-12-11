@@ -12,9 +12,7 @@ while N != i+1
   let i += 1
   if N%i == 0
     let N = N/i
-    let i = 1
   endif
 endwhile
 
-echo N
 echo N
